@@ -1,0 +1,11 @@
+Latent Reasoning Dynamics in Recursive Neural Networks	
+
+Implement a small Looped Reasoning Flow model and reproduce latent trajectory/basin visualizations. Compare reasoning dynamics with baselines and investigate model behavior on multi-solution problems.	
+			
+https://arxiv.org/abs/2506.21734 
+https://arxiv.org/abs/2510.04871 
+https://arxiv.org/abs/2605.19376 
+https://arxiv.org/abs/2609.11801 
+https://arxiv.org/abs/2609.04963v1						
+
+Supervision: Bi-weekly meetings (preferably in person) at Thursdays, 2pm							
