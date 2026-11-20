@@ -1,2 +1,2 @@
 UNTIL NEXT MEETING
-Read papers and brainstorm
+Train TRM on 1, 2 Datasets and visualize its hidden space

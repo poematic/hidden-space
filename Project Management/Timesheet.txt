@@ -1,2 +1,25 @@
 13.10.26				1d		allocate thesis
 15.-19.10.26				2d4h		prepare for semester
+19.10.26	16:00-18:00		2h	T	study videos on TRM
+20.10.26	09:30-12:30		3h	T	study videos on TRM
+		14:00-17:45		3h45m	T	study videos on HRM
+		19:30-22:00		2h30m	T	study videos on GRAM
+21.10.26	10:30-13:00		2h30m	T	read Looped Flows paper
+		14:15-19:45		5h30m	T	read Looped Flows paper and summary
+22.10.26	10:00-13:30		3h30m	T	create architecture schematic
+		14:00-15:00		1h	T	Meeting
+		16:00-18:15		1h15m	T	draw looped flows
+		09:45-12:15		2h15m	T	Finish looped flows graph
+		14:15-19:30	-2h	3h15m	T	Read Looped Flows paper, investigate GPUs
+02.11.26	11:30-12:30		1h	S	Finish reading Seminar lecture 1
+		14:45-16:00		1h15m	S	Sem Lecture 2 lesen, Test machen
+03.11.26	10:30-12:30		2h	T	Understanding Looped Flows
+		15:15-18:00		2h45m	T	Understanding Looped Flows	
+04.11.26	10:30-13:00	-15m	2h15m	T	Understanding Looped Flows	
+		14:30-17:30		3h	T	Understanding Looped Flows	
+05.11.26	10:00-12:15		2h15m	T	Understanding Looped Flows	
+		14:45-18:15	-30m	3h	T	Understanding Looped Flows
+06.11.26	10:00-13:00		3h	T 	Understanding Looped Flows
+		15:15-18:00		2h45m	T	Understanding Looped Flows & Fractal Basins	
+07.11.26	11:00-12:45		2h45m	T	Understanding Fractal Basins	
+08.11.26	11:00-13:00		2h	T	Understanding Fractal Basins

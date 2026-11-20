@@ -1,0 +1,3 @@
+Konvergenzzeit über Anfangszustände für TRM
+-------------------------------------------
+mal mit z_h beginnen

@@ -1,0 +1,4 @@
+Also die besseren (nützlicheren) Hidden Zustände werden nicht durch Backpropagation über Segmente hinweg erreicht, sondern dadurch, dass man dem Netz Zeitstempel und Lösung mit entsprechendem Rauschiveau mitgibt, die es entrauschen soll? Bitte sehr kurz.
+
+- Ja, genau. Nicht durch Backpropagation über Segmentgrenzen, sondern durch zeitabhängiges Denoising mit abnehmendem Rauschniveau.
+Dadurch sollen indirekt nützlichere Hidden States entstehen, ohne dass deren Nützlichkeit für spätere Segmente explizit optimiert wird.

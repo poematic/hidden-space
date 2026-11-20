@@ -1,0 +1,79 @@
+LLM
+Es muss in menschlicher Sprache nachgedacht werden! Dabei werden die Überlegungen ausgegeben, aber menschliches Nachdenken läuft nicht immer über Wörter.
+
+HRM
+Im Gegensatz zu LLMs werden die Gedankengänge nicht ausgegeben.
+Nested Recursion - Enhanced Reasoning
+Mehr Neuronen oder Rekurrenzen? => Rekurrenzen
+input injection
+Die Idee ist, dass man mit der Berechnung aufhört, wenn sowohl L als auch H Modul konvergiert haben
+
+TRM
+Der Originalcode speichert nur die Modellgewichte für einen Checkpoint, nicht Learning Rate, Optimizer-Zustand etc. Das könnte wirklich verbessert werden. 
+
+GRAM
+Hilft Reasoning-Prozess auf die Sprünge
+Prior ^= blind guesser
+
+FPRM
+Fixed-Point Reasoning Model: Transformer, der so oft geloopt wird, bis sein Hidden state zu einem fixed-point konvergiert.
+
+LOOPED FLOWS
+addressiert vor allem mangelhafte Backpropagation, nämlich, dass frühe Verarbeitungen nicht verwendet werden. Dadurch werden frühe Verarbeitungen nicht daraufhin trainiert, nützlich zu sein. Damit können instabile Verarbeitungen gelernt werden, die bei einfachen Problemen versagen. 
+ist ein weiterer Weg, bei multi-solution Problemen mehrere Lösungen zu finden
+preliminary solution injection
+Löst Problem, dass ein RRM in frühen Reasoning Segmenten schlechte Reasoning-Entscheidungen trifft, da es eine generelle Aufgabe zu lösen versucht, dadurch, dass dem Modell ein Zeitstempel mitgegeben wird, der dem Netz sagt, wo im Lösungsprozess man sich in etwa befindet. Dadurch kann das Netz entscheiden, was es zu diesem genauen Zeitpunkt erreichen möchte. Zu Beginn etwa könnte die Aufgabe eher lauten einfache Ziffern zu finden, wohingegen am Ende eher wichtig sein könnte, ausstehende Konflikte zu lösen. 
+
+FRACTAL BASINS	
+* Halte es für einen interessanten Ansatz, alle Initialzustände von z für ein Model zu testen. Allerdings ist damit nicht garantiert, dass alle weitere Zustände alle möglichen weitern Zustände abdecken. Insofern kann sich eine Trajektorie in dieser weiteren Zuständen verirren.
+Fragen
+* Inwiefern sind die gezeigten Muster eigentlich fraktal?
+* Bin noch immer etwas unzufrieden mit der Darstellung des Latenten Raums, ist es denn nicht möglich, diesen gut in 3D darzustellen, sodass falsche Lösungen als lokale und tatsächliche als globale zu sehen sind? Und ändert sich diese Landschaft nicht im Laufe des Trainings für ein Sample? Aber wie würde diese Landschaft für ein neues Sample aussehen?
+
+VISUALISIERUNG
+* sehr gute TRM-Darstellung: y ... Entwurf, z ... Notizblock
+* Eigentlich Visualisierung des latenten Raums beim Lernen oder beim Ausführen?
+* Man könnte (natürlich?) auch den Lösungsweg visualisieren
+* Das Halting-System könnte für die Visualisierung auch von Wichtigkeit sein.
+* Wäre an irgendeiner Stelle ein Interactive Article anzudenken?
+
+GENERELL
+Es ist nicht klar, was das Netzwerk im High- und Low-Level-Modus lernt; es muss nicht so sein, dass in l Logik und Regeln erarbeitet werden und in h diese ausagiert werden. Arbeitsteilungen werden gelernt und Regeln werden implizit gelernt. Es könnte auch sein, dass l ein Speicher ist. ... und das halte ich für etwas problematisch im Hinblick auf die Visualisierung des Hidden states. Denn der Hidden State könnte ja auch Algorithmen transportieren, d.h. nicht Lösungen oder verkappte Lösungen. Insofern fände ich es zielführender, den Lösungsraum zu visualisieren... Dasselbe Thema beim nicht-Konvergieren. Da wird auch angenommen, dass der Hidden Space eigentlich den Lösungsraum repräsentiert.
+stabiles Lernen immer von Vorteil
+
+GEDANKEN
+Es wird wohl ein Zusammenspiel sein von: Wissen, was im Hidden Space geschieht, und ein neues Lernmodell erstellen. Ich schätze schon, dass Reinforcement Learning eine Methode sein könnte, BPTT zu ermöglichen bzw. das Vanishing/Exploding-Gradient-Problem zu beheben. 
+Es wäre auch interessant zu wissen, wie ein Looped Model de facto einen Hidden-/Lösungsberg zur Lösung überwindet.
+
+DATASETS
+*HRM
+	- ARC-AGI-1
+	- ARC-AGI-2
+	- Sudoku-Extreme (9x9)
+	- Maze-Hard (30x30)
+* Generell: "Symbolic Tree Search Puzzles"
+* Countdown
+* N-Queens
+* Graph Coloring
+
+THESIS-MÖGLICHKEITEN
+* Herausfinden, was in den Features steht, und ein besseres Modell schaffen
+* Nachweisen, dass ein TRM einen Backtracking-Algorithmus ausführt.
+
+NEUE ARCHITEKTUREN
+* Müsste man sich nicht ansehen, wie Menschen logische Rätsel lösen? Und dann die Gegebenheiten dafür in einem Modell schaffen...
+* Könnte man TRM nicht verbessern, indem man das L-Netz wirklich so lange laufen lässt, bis ein Equilibrium entsteht?
+
+TO DO
+* Transformer lernen: Chain of Thought
+
+IDEEN
+* Was, wenn man, um eine Methode zu testen, gleich im spurious attractor startet?
+* RUDDER, um das vanishing / exploding gradient problem zu lösen
+Eigentlich geht's hier um IQ-Tests... - Gibt's ein Dataset mit IQ-Tests? ;)
+Und was ist mit Emotionaler Intelligenz??
+	etablierte Tests: MSCEIT, GERT, EQ-i 2.0, TEIQue
+* Inductive Reasoning: Zendo!
+
+
+

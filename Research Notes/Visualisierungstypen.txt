@@ -1,0 +1,22 @@
+TRAINING
+Trajektoriendarstellung für verschiedene Trainingszustände beim selben Rätsel und selbem Anfangszustand (noch zu untersuchen)
+	dekodierte Lösungsvorschläge beifügen
+
+INFERENZ
+Konvergenzzeit über initialen latenten Raum (bzw. über zwei bestimmte Achsen davon) beim selben Rätsel
+	* Probieren, z_h und z_l zu visualisieren
+	generell als Farbe, möglicherweise auch als Höhe
+	möglicherweise Einzugsgebiete von "fixed Points" unterschiedlich einfärben (damit auch solche Werte, die zur richtigen Lösung finde oder nicht)
+	Geht besonders gut bei Model-Checkpoints rund um einen Aha-Moment des Modells
+	eine Projektion von Trajektorien von diesen Anfangszuständen aus auf dieselbe Fläche macht wenig Sinn, da die Punkte nicht die gleiche Konvergenzzeit 		haben müssen wie die Zustände, auf denen sie liegen. 
+Trajektoriendarstellung für verschiedene Anfangszustände beim selben Rätsel (noch zu untersuchen)
+	dekodierte Lösungsvorschläge beifügen
+	für verschiedene Modelle versuchen
+
+
+GENERELL
+	Norm (Größe) oder Ähnlichkeit (Veränderung) des latenten Raums darstellen
+	Heatmap des latenten Raums erstellen und so Zellen lokalisieren, die sich besonders oft verändern
+	PCA bzw. UMAP oder t-sne des latenten Raums umsetzen
+	* Anstatt Anfangszustände von einem 2D-Slice zu wählen, kann man bei loopscapes auch nur zufällige Zustände nehmen und beobachten, ob die 	Lösungsvorschläge zu denselben Lösungen streben
+	
