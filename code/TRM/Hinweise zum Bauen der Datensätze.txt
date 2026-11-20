@@ -1,0 +1,9 @@
+* Arbeitsspeicher von WSL musste auf 12GB vergrößert werden
+* Anzahl der Augmentationen musste auf 500 halbiert werden per
+python -m dataset.build_arc_dataset \
+  --input-file-prefix kaggle/combined/arc-agi \
+  --output-dir data/arc2concept-aug-500 \
+  --subsets training2 evaluation2 concept \
+  --test-set-name evaluation2  --num-aug 500
+* Datensätze konventionell nicht auf GitHub pushen
+		
