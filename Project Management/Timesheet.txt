@@ -25,3 +25,6 @@
 08.11.26	11:00-13:00		2h	T	Understanding Fractal Basins
 09.11.26	09:45-12:30		2h30m	T	Creating TRM environment
 		14:30-18:00		3h30m	T 	Creating TRM environment
+10.11.26	10:15-13:00		2h45m	T	Understanding TRM Repo
+		14:45-18:00	-30m	2h45m	T	Test training on Sudoku 9x9
+11.11.26	12:30-13:00		30m	T	Building ARC datasets with 500 Augs
