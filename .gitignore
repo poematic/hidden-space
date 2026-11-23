@@ -3,3 +3,4 @@ __pycache__/
 checkpoints/
 code/TRM/wandb/
 code/TRM/outputs
+.vscode/

@@ -3,6 +3,7 @@ import os
 import csv
 import json
 import numpy as np
+import shutil
 
 from argdantic import ArgParser
 from pydantic import BaseModel
@@ -63,6 +64,7 @@ def convert_subset(set_name: str, config: DataProcessConfig):
     labels = []
     
     with open(hf_hub_download(config.source_repo, f"{set_name}.csv", repo_type="dataset"), newline="") as csvfile:
+        shutil.copy(csvfile.name, f"{set_name}_data.csv")
         reader = csv.reader(csvfile)
         next(reader)  # Skip header
         for source, q, a, rating in reader:
@@ -137,13 +139,15 @@ def convert_subset(set_name: str, config: DataProcessConfig):
         num_puzzle_identifiers=1,
         total_groups=len(results["group_indices"]) - 1,
         mean_puzzle_examples=1,
-        total_puzzles=len(results["group_indices"]) - 1,
+        total_puzzles=len(results["puzzle_indices"]) - 1, 
         sets=["all"]
     )
 
     # Save metadata as JSON.
     save_dir = os.path.join(config.output_dir, set_name)
     os.makedirs(save_dir, exist_ok=True)
+    
+    shutil.move(f"{set_name}_data.csv", f"{config.output_dir}/{set_name}/{set_name}_data.csv")
     
     with open(os.path.join(save_dir, "dataset.json"), "w") as f:
         json.dump(metadata.model_dump(), f)
