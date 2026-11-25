@@ -13,7 +13,7 @@ H_layers: 0
 L_layers: 2
 
 hidden_size: 512
-num_heads: 8  # min(2, hidden_size // 64)
+num_heads: 8  # min(2, hidden_size // 64), deprecated
 expansion: 4
 
 puzzle_emb_ndim: ${.hidden_size}
@@ -24,3 +24,7 @@ forward_dtype: bfloat16
 mlp_t: False # use mlp on L instead of transformer
 puzzle_emb_len: 16 # if non-zero, its specified to this value
 no_ACT_continue: True # No continue ACT loss, only use the sigmoid of the halt which makes much more sense
+
+# Zusätzlich zu den 81 Zellen eines Sudoku gibt es 16 Zellen, also 97 Zellen in den hidden states. Diese werden mit den Sudoku-Zellen mit L_ und H_init initialisiert. Weiters gibt es diese
+# 16 Zellen auch im Puzzle-Embedding, das ja zu den hidden states addiert wird. Hierbei ist wegen puzzle_emb_ndim=512 nur genau eine dieser 16 Zellen als lernbarer Vektor vorgesehen. D.h. im
+# Training wird diese Zelle graduell angepasst. In der Inferenz ist sie der letzte Trainingswert. Die anderen 15 Zellen sind im Training und in der Inferenz immer 0.
