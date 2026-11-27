@@ -1,0 +1,1 @@
+ython pretrain.py global_batch_size=32 --cfg job
