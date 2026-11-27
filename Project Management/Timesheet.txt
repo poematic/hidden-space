@@ -28,3 +28,9 @@
 10.11.26	10:15-13:00		2h45m	T	Understanding TRM Repo
 		14:45-18:00	-30m	2h45m	T	Test training on Sudoku 9x9
 11.11.26	12:30-13:00		30m	T	Building ARC datasets with 500 Augs
+		14:30-18:00	-30m	3h	T	Trying to modify the code for 4x4 Sudokus
+12.11.26	08:00-13:00	-30m	4h30m	T	Create build_sudoku_4x4_dataset
+		15:30-17:30		3h	T	Train on 4x4 Sudokus
+13.11.26	08:00-13:00	-15m	4h30m	T	Set up new keyboard, check Code and Diagrams
+		14:45-18:00	-15m	3h	T	Train pretrained model, look for training location
+14.11.26	09:45-13:00		3h	T	Examine Sudoku 4x4 Training result and lauching Sudoku 9x9 Test Training

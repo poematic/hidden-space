@@ -42,5 +42,7 @@ for set_name in metadata["sets"]:
 
     for i in indices:
         print(f"\nExample {i}")
-        print("Input: ", inputs[i].tolist())
-        print("Label: ", labels[i].tolist())
+        input = "".join(map(str, inputs[i] - 1))
+        label = "".join(map(str, labels[i] - 1))
+        print("Input: ", input)
+        print("Label: ", label)
